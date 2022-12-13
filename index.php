@@ -1,11 +1,17 @@
 <?php
     require_once __DIR__ . '/Models/Product.php';
+    require_once __DIR__ . '/Models/Food.php';
+    require_once __DIR__ . '/Models/Game.php';
 
-    $palla = new Product('Palla', 5, 'Cane');
+    $product1 = new Product('Palla', 5,'Purina','Cane');
 
-    var_dump($palla);
+    var_dump($product1);
 
-    $productDog = new Food('Crocchette ', 43, 'Cane', 'Tonno e Riso', '15 Kg');
+    $product2 = new Food('Crocchette ', 43,'Purina','Cane', 'Tonno e Riso', '15 Kg');
 
-    var_dump($productDog);
+    var_dump($product2);
+
+    $product3 = new Game('Corda', 4, 'Cane', 'Monge', 'Adult', 'Inluso');
+    var_dump($product3);
+
 ?>
