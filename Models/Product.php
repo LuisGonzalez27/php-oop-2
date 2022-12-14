@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__ . '/Category.php';
+require_once __DIR__ . '/../Traits/Vote.php';
     class Product {
+        use Vote;
         public $name;
         public $price;
         public $brand;

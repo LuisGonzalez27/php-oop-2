@@ -14,6 +14,10 @@
                         Category:
                         <?= $product->category ?>
                     </h6>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        Vote:
+                        <?= $product->getVote() ?>
+                    </h6>
                     <p>
                         <?php if ($product->getClassName() === 'Food') {
                             echo 'Tipologia: ' . $product->getFoodType();
