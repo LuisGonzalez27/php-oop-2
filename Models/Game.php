@@ -11,4 +11,29 @@ class Game extends Product
         $this->age = $_age;
         $this->textbook = $_textbook;
     }
+
+    function getClassName()
+    {
+        return get_class();
+    }
+
+    public function setAge($age)
+    {
+        $this->age = $age;
+    }
+
+    public function getAge()
+    {
+        return $this->age;
+    }
+    public function setTextbook($textbook)
+    {
+        $this->textbook = $textbook;
+    }
+
+    public function getTextbook()
+    {
+        return $this->textbook;
+    }
+
 };

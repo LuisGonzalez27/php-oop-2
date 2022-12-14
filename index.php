@@ -19,6 +19,13 @@
     $product4 = new Game('Topo meccanico', 8, 'Purina','Gatto','./img/topo.jpg', 'Adult', 'Incluso');
     // var_dump($product4);
 
+    $products = [
+        $product1,
+        $product2,
+        $product3,
+        $product4,
+    ];
+
     include_once __DIR__ . '/partials/header.php';
     include_once __DIR__ . '/partials/main.php';
     include_once __DIR__ . '/partials/footer.php';

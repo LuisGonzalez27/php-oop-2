@@ -16,4 +16,9 @@ require_once __DIR__ . '/Category.php';
             $this->category = $_category;
             $this->image = $_image;
         }
+
+        public function getClassName()
+        {
+            return get_class();
+        }
     }

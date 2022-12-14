@@ -9,4 +9,27 @@ class Food extends Product{
             $this->food_type = $_food_type;
             $this->size = $_size;
         }
+
+        function getClassName()
+        {
+          return get_class();
+        }
+
+        public function setFoodType($food_type)
+        {
+          $this->food_type = $food_type;
+        }
+        public function getFoodType()
+        {
+          return $this->food_type;
+        }
+
+        public function setSize($size)
+        {
+          $this->food_type = $size;
+        }
+        public function getSize()
+        {
+          return $this->food_type;
+        }
     }
